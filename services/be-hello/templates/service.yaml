@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: be-hello
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/test-cloud-native-project/be-hello@sha256:c9ee1bab027d56f24cabb74850b6294e351df98103c27738f5e5aff036f71f56
+          ports:
+            - containerPort: 8081

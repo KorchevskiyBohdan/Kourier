@@ -1,0 +1,9 @@
+apiVersion: v2 # The chart API version (required)
+version: 0.0.1 # Chart version
+name: be-hello # The name of the chart (required)
+description: Knative-chart for Kubernetes # A single-sentence description of this project (optional)
+type: application # application / library (A library chart differs from an application chart because
+                  # it is not installable and usually doesn't contain any resource objects.)
+appVersion: 0.0.1 # This field is typically used to document the version of the application that the
+                  # Helm chart is intended to deploy, but it does not affect the deployment or management
+                  # of the application itself.
